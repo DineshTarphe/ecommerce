@@ -1,0 +1,36 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+header{
+    background-color: #fff !important;
+    nav{
+        padding: toRem(20) toRem(80) !important;
+        background-color: #fff !important;
+        #navbarNav{
+            ul{
+                gap: toRem(50);
+                justify-content: center;
+                width: 100%;
+                li{
+                    a{
+                        text-decoration: none;
+                        font-weight: 500;
+                        color: #000;
+                        font-size: toRem(16);
+                    }
+                }
+            }
+        }
+        .header-icons{
+            display: flex;
+            gap: toRem(50);
+            a{
+                color:#000;
+
+                i{
+                    font-size: toRem(20);
+                }
+            }
+        }
+    }
+}
