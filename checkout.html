@@ -56,81 +56,150 @@
                 <img src="./images/shop/shop-banner.png" class="img-fluid w-100">
             </div>
             <div class="breadcrumb-text">
-                <h3>Cart</h3>
+                <h3>Checkout</h3>
                 <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                        <li class="breadcrumb-item active" aria-current="page">Checkout</li>
                     </ol>
                 </nav>
             </div>
         </section>
         <!-- Breadcrump Section End -->
 
-        <!-- Cart Box Section Start -->
-        <section class="cart-box-section">
+        <!-- Checkout Form Section Start -->
+
+        <section class="checkout-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-6 cart-items">
-                        <div class="cart-product-wrapper">
-                            <div class="cart-table">
-                                <table>
-                                    <tr class="head">
-                                        <th></th>
-                                        <th>Product</th>
-                                        <th>Price</th>
-                                        <th>Quantity</th>
-                                        <th>Subtotal</th>
-                                        <th></th>
-                                    </tr>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <img src="./images/image-1.png" class="img-fluid">
-                                            </td>
-                                            <td>
-                                                <h5>Asgaard sofa</h5>
-                                            </td>
-                                            <td>
-                                                <p>Rs. 250,000.00</p>
-                                            </td>
-                                            <td>
-                                                <input type="number" value="1" min="1">
-                                            </td>
-                                            <td>
-                                                <b>Rs. 250,000.00</b>
-                                            </td>
-                                            <td>
-                                                <a href="javascript:void(0);"><img src="./images/icons/delete.png" class="img-fluid del-icon"></a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                <div class="row g-100">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="checkout-form">
+                            <h3>Billing details</h3>
+                            <form>
+                                <div class="checkout-wrapper">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <label>First Name</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <label>Last Name</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label>Company Name (Optional)</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label>Country / Region</label>
+                                            <select class="country">
+                                                <option>India</option>
+                                                <option>US</option>
+                                                <option>UK</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label>Street address</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label>Town / City</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label>Province</label>
+                                            <select class="country">
+                                                <option>India</option>
+                                                <option>US</option>
+                                                <option>UK</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label>ZIP code</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label>Phone</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label>Email address</label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" placeholder="Additional information">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-md-12">
-                        <div class="cart-total">
-                            <h3>Cart Totals</h3>
-                            <div class="cart-total-wrapper">
-                                <div class="subtotal-div">
-                                    <p>Subtotal</p>
-                                    <span>Rs. 250,000.00</span>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="product-payment-wrapper">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Subtotal</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span>Asgaard sofa x </span>1</td>
+                                        <td>Rs. 250,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Subtotal</td>
+                                        <td>Rs. 250,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td class="final-price">Rs. 250,000.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <hr>
+                        <div class="direct-trasfer-div">
+                            <p><span></span>Direct Bank Transfer</p>
+                            <h6>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</h6>
+                            <div class="payment-options">
+                                <div class="first-radio-btn">
+                                    <input type="radio" name="Direct Bank Transfer">
+                                    <label for="Direct Bank Transfer">Direct Bank Transfer</label>
                                 </div>
-                                <div class="total-div">
-                                    <p>Total</p>
-                                    <span>Rs. 250,000.00</span>
+                                <div class="first-radio-btn">
+                                    <input type="radio" name="Cash On Delivery">
+                                    <label for="Cash On Delivery">Cash On Delivery</label>
                                 </div>
+                                <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <b>privacy policy.</b></p>
                             </div>
-                            <div class="checkout-btn-div">
-                                <button class="btn checkout-button"> Checkout</button>
+                            <div class="place-btn">
+                                <a href="javascript:void(0);">Place order</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Cart Box Section End -->
+
+        <!-- Checkout Form Section End -->
 
         <!-- High Quality Section Start -->
         <section class="delivery-detail-section">

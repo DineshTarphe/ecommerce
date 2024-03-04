@@ -1,6 +1,11 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
 
+$product-color-lst : (
+                      "color-1":#d70303,
+                      "color-2":#005533,
+                      "color-3":#05009d
+                      );
 .product-image-section{
     padding: toRem(70) toRem(0);
 
@@ -92,15 +97,17 @@
                 @extend %details-size-color-wrapper;
                 a{
                     @extend %details-color-varient;
-                    &.color-1{
-                        background-color: #816DFA;
-                    }  
-                    &.color-2{
-                        background-color: #000;
-                    }  
-                    &.color-3{
-                        background-color: #B88E2F;
-                    }  
+                    @each $clrname,$clr in $product-color-lst{
+                        &.#{$clrname}{
+                            background-color: $clr;
+                        }
+                    }
+                    // &.color-2{
+                    //     background-color: #000;
+                    // }  
+                    // &.color-3{
+                    //     background-color: #B88E2F;
+                    // }  
                 }
             }
         }
